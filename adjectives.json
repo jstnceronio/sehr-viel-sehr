@@ -1,0 +1,244 @@
+{
+  "wordpairs": [
+    {
+      "wack": "teuer",
+      "good": "kostspielig"
+    },
+    {
+      "wack": "billig",
+      "good": "spottbillig"
+    },
+    {
+      "wack": "sauber",
+      "good": "blitzblank"
+    },
+    {
+      "wack": "schmutzig",
+      "good": "verdreckt"
+    },
+    {
+      "wack": "müde",
+      "good": "erschöpft"
+    },
+    {
+      "wack": "hungrig",
+      "good": "ausgehungert"
+    },
+    {
+      "wack": "durstig",
+      "good": "ausgedörrt"
+    },
+    {
+      "wack": "alt",
+      "good": "uralt"
+    },
+    {
+      "wack": "jung",
+      "good": "blutjung"
+    },
+    {
+      "wack": "neu",
+      "good": "nagelneu"
+    },
+    {
+      "wack": "kalt",
+      "good": "eiskalt"
+    },
+    {
+      "wack": "heiß",
+      "good": "brütend heiß"
+    },
+    {
+      "wack": "feucht",
+      "good": "klatschnass"
+    },
+    {
+      "wack": "trocken",
+      "good": "ausgedörrt"
+    },
+    {
+      "wack": "nah",
+      "good": "unmittelbar"
+    },
+    {
+      "wack": "fern",
+      "good": "weit entfernt"
+    },
+    {
+      "wack": "voll",
+      "good": "brechend voll"
+    },
+    {
+      "wack": "leer",
+      "good": "gähnend leer"
+    },
+    {
+      "wack": "reich",
+      "good": "steinreich"
+    },
+    {
+      "wack": "arm",
+      "good": "bitterarm"
+    },
+    {
+      "wack": "müde",
+      "good": "lebensmüde"
+    },
+    {
+      "wack": "klug",
+      "good": "blitzgescheit"
+    },
+    {
+      "wack": "hoch",
+      "good": "wolkenkratzend"
+    },
+    {
+      "wack": "dünn",
+      "good": "haarfein"
+    },
+    {
+      "wack": "fest",
+      "good": "knallhart"
+    },
+    {
+      "wack": "zart",
+      "good": "seidenweich"
+    },
+    {
+      "wack": "scharf",
+      "good": "schneidend scharf"
+    },
+    {
+      "wack": "klar",
+      "good": "glasklar"
+    },
+    {
+      "wack": "schnell",
+      "good": "pfeilschnell"
+    },
+    {
+      "wack": "warm",
+      "good": "feuerheiß"
+    },
+    {
+      "wack": "kalt",
+      "good": "eisig kalt"
+    },
+    {
+      "wack": "hoch",
+      "good": "himmelhoch"
+    },
+    {
+      "wack": "tief",
+      "good": "abgrundtief"
+    },
+    {
+      "wack": "offensichtlich",
+      "good": "sonnenklar"
+    },
+    {
+      "wack": "hell",
+      "good": "mondgleich"
+    },
+    {
+      "wack": "hell",
+      "good": "sternhell"
+    },
+    {
+      "wack": "sauber",
+      "good": "funkelnd rein"
+    },
+    {
+      "wack": "dunkel",
+      "good": "rabenschwarz"
+    },
+    {
+      "wack": "weiß",
+      "good": "schneeweiß"
+    },
+    {
+      "wack": "freundlich",
+      "good": "herzlich"
+    },
+    {
+      "wack": "beeindruckend",
+      "good": "ehrfurchtgebietend"
+    },
+    {
+      "wack": "klar",
+      "good": "wasserklar"
+    },
+    {
+      "wack": "robust",
+      "good": "felsig"
+    },
+    {
+      "wack": "wertvoll",
+      "good": "goldreich"
+    },
+    {
+      "wack": "glänzend",
+      "good": "silberglänzend"
+    },
+    {
+      "wack": "klar",
+      "good": "kristallklar"
+    },
+    {
+      "wack": "rot",
+      "good": "feuerrot"
+    },
+    {
+      "wack": "blau",
+      "good": "himmelblau"
+    },
+    {
+      "wack": "bodenständig",
+      "good": "erdverbunden"
+    },
+    {
+      "wack": "schnell",
+      "good": "windgeschwind"
+    },
+    {
+      "wack": "gebräunt",
+      "good": "sonnengebräunt"
+    },
+    {
+      "wack": "klar",
+      "good": "wolkenlos"
+    },
+    {
+      "wack": "laut",
+      "good": "donnernd"
+    },
+    {
+      "wack": "hell",
+      "good": "blitzend"
+    },
+    {
+      "wack": "grau",
+      "good": "regnerisch grau"
+    },
+    {
+      "wack": "kühl",
+      "good": "schattig kühl"
+    },
+    {
+      "wack": "nebelig",
+      "good": "nebelverhangen"
+    },
+    {
+      "wack": "kalt",
+      "good": "frostig"
+    },
+    {
+      "wack": "heiß",
+      "good": "glutheiß"
+    },
+    {
+      "wack": "glatt",
+      "good": "eisglatt"
+    }
+  ]
+}

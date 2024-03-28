@@ -6,6 +6,7 @@
   }
 
   const adjectives: Adjective[] = adjectivesJson.wordpairs;
+  var updated = false;
 
   function getRandomWordPair(): Adjective {
     const randomIndex = Math.floor(Math.random() * adjectives.length);
@@ -18,7 +19,29 @@
   // Defer selection of random pair until the component is mounted to avoid hydration mismatch
   onMounted(() => {
     selectedAdjective.value = getRandomWordPair();
+    const target = document.querySelector('.enter-adj');
+    if (target) {
+      target.addEventListener('input', function() {
+        this.style.width = this.value.length + 'ch';
+      });
+    }
   });
+
+  onUpdated(() => {
+    if (!updated) {
+      const target = document.querySelector('.enter-adj');
+      const event = new Event('input', {
+        bubbles: true,
+        cancelable: true,
+      });
+      if (target) {
+        target.dispatchEvent(event);
+        updated = true;
+      }
+    }
+  });
+
+
 </script>
 
 <template>
@@ -26,11 +49,14 @@
     Sehr
   </div>
   <div class="adjektiv text-6xl py-2 flex">
-    <input type="text" v-bind:placeholder="selectedAdjective.wack" class="max-w-64">
+    <div class="input-wrapper w-min">
+      <input type="text" :value="selectedAdjective.wack" class="enter-adj min-w-8 focus:outline-0 caret-transparent">
+    </div>
     <div class="cursor"></div>
   </div>
   <div class="improvement text-6xl py-2">
     = <br>
+    <span class="underline decoration-amber-300"></span>
     {{ selectedAdjective.good }}
   </div>
 </template>
@@ -42,6 +68,7 @@
   .cursor {
     display: inline-block;
     background-color: currentColor;
+    margin-top: 16px;
     width: 2px;
     height: 0.75em;
     animation: blink-animation 1s steps(5, start) infinite;

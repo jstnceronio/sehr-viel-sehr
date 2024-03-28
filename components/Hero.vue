@@ -6,19 +6,21 @@
   }
 
   const adjectives: Adjective[] = adjectivesJson.wordpairs;
-  var updated = false;
+  let updated = false;
 
   function getRandomWordPair(): Adjective {
     const randomIndex = Math.floor(Math.random() * adjectives.length);
     return adjectives[randomIndex];
   }
 
-  // todo: select a random pair every 2s until user focuses on field
   const selectedAdjective = ref<Adjective>({ wack: '', good: '' });
+
+  let inputValue = '';
 
   // Defer selection of random pair until the component is mounted to avoid hydration mismatch
   onMounted(() => {
     selectedAdjective.value = getRandomWordPair();
+    inputValue = selectedAdjective.value.wack;
     const target = document.querySelector('.enter-adj');
     if (target) {
       target.addEventListener('input', function() {
@@ -41,6 +43,24 @@
     }
   });
 
+  function handleEnter() {
+    let foundAlternative = findWordPair(inputValue);
+    if (foundAlternative) {
+      selectedAdjective.value.good = foundAlternative;
+    } else {
+      selectedAdjective.value.good = "Kein Eintrag";
+    }
+  }
+
+  function findWordPair(searchWord: string): string | null {
+    for (const pair of adjectives) {
+      if (pair.wack === searchWord) {
+        return pair.good;
+      }
+    }
+    // If the searchWord is not found in any pair
+    return null;
+  }
 
 </script>
 
@@ -50,7 +70,7 @@
   </div>
   <div class="adjektiv text-6xl py-2 flex">
     <div class="input-wrapper w-min">
-      <input type="text" :value="selectedAdjective.wack" class="enter-adj min-w-8 focus:outline-0 caret-transparent">
+      <input type="text" v-model="inputValue" @keyup.enter="handleEnter" class="enter-adj min-w-8 focus:outline-0 caret-transparent text-gray-400">
     </div>
     <div class="cursor"></div>
   </div>
@@ -68,9 +88,9 @@
   .cursor {
     display: inline-block;
     background-color: currentColor;
-    margin-top: 16px;
+    margin-top: 8px;
     width: 2px;
-    height: 0.75em;
+    height: 1em;
     animation: blink-animation 1s steps(5, start) infinite;
   }
 

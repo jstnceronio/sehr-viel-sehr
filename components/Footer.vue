@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <pre class="ascii-footer text-[.15rem] overflow-hidden md:text-[.5rem] lg:text-[.6rem] md:leading-[.5rem] mb-[-1rem] items-center" data-text="
+  <footer>
+    <pre class="ascii-footer text-[.15rem] overflow-hidden md:text-[.5rem] lg:text-[.6rem] md:leading-[.5rem] mb-[-1rem] items-center" data-text="
 
 
 
@@ -110,9 +111,10 @@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
   </pre>
-  <div class="footer-text text-white p-6 font-mono text-xs sm:text-xl bg-gray-950 lg:text-center">
-    Made with ❤️ in Thun
-  </div>
+    <div class="footer-text text-white p-6 font-mono text-xs sm:text-xl bg-gray-950 lg:text-center">
+      Made with ❤️ in Thun
+    </div>
+  </footer>
 </template>
 
 <style scoped>

@@ -76,8 +76,10 @@
   </div>
   <div class="improvement text-6xl py-2">
     = <br>
-    <span class="underline decoration-amber-300"></span>
-    {{ selectedAdjective.good }}
+    <span class="underline decoration-blue-700 break-all">{{ selectedAdjective.good }}</span>
+  </div>
+  <div class="mt-16">
+    Geben Sie ein überstrapaziertes Adjektiv ein, um eine stärkere Alternative zu finden.
   </div>
 </template>
 

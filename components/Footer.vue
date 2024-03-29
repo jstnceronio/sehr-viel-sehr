@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  Made with ❤️ in Thun
+  <div class="footer-text text-white p-12 font-mono">
+    Made with ❤️ in Thun
+  </div>
 </template>
 
 <style scoped>

@@ -65,21 +65,23 @@
 </script>
 
 <template>
-  <div class="sehr text-6xl mt-16 py-2">
-    Sehr
-  </div>
-  <div class="adjektiv text-6xl py-2 flex">
-    <div class="input-wrapper w-min">
-      <input type="text" v-model="inputValue" @keyup.enter="handleEnter" class="enter-adj min-w-8 focus:outline-0 caret-transparent text-gray-400">
+  <div class="hero-wrapper text-6xl md:text-8xl lg:text-center">
+    <div class="sehr mt-16 py-2">
+      Sehr
     </div>
-    <div class="cursor"></div>
-  </div>
-  <div class="improvement text-6xl py-2">
-    = <br>
-    <span class="underline decoration-blue-700 break-all">{{ selectedAdjective.good }}</span>
-  </div>
-  <div class="mt-16">
-    Geben Sie ein überstrapaziertes Adjektiv ein, um eine stärkere Alternative zu finden.
+    <div class="adjective py-2 flex lg:justify-center">
+      <div class="input-wrapper w-min">
+        <input type="text" v-model="inputValue" @keyup.enter="handleEnter" class="enter-adj min-w-8 focus:outline-0 caret-transparent text-gray-400">
+      </div>
+      <div class="cursor"></div>
+    </div>
+    <div class="improvement py-2">
+      = <br>
+      <span class="underline decoration-blue-700 break-all">{{ selectedAdjective.good }}</span>
+    </div>
+    <div class="mt-16 text-sm md:text-xl">
+      Geben Sie ein überstrapaziertes Adjektiv ein, um eine stärkere Alternative zu finden.
+    </div>
   </div>
 </template>
 

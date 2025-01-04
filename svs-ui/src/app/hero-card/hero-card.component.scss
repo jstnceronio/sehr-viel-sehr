@@ -1,0 +1,52 @@
+.card {
+  @apply mt-8
+  w-2/3
+  mx-auto my-auto
+  tracking-widest
+  p-8;
+
+  &__header {
+    @apply font-bold
+    text-3xl
+    text-center
+    mb-10;
+  }
+
+  &__description {
+    @apply text-lg
+    mb-4;
+  }
+
+  &__search {
+    @apply mb-4
+    flex;
+  }
+
+  &__input {
+    @apply w-full text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 shadow-sm;
+  }
+
+  &__result {
+    @apply text-lg;
+  }
+
+  &__prompt {
+    @apply text-lg
+    mb-4
+    font-bold
+    text-emerald-600;
+  }
+
+  &__actions {
+    @apply grid grid-cols-2 gap-4 mt-4;
+  }
+
+  &__button {
+    &--primary {
+      @apply flex bg-black text-white px-4 py-2 rounded hover:bg-gray-900 transition;
+    }
+    &--secondary {
+      @apply bg-white text-black col-span-2 border border-gray-500 px-4 py-2 rounded hover:bg-gray-100 transition;
+    }
+  }
+}

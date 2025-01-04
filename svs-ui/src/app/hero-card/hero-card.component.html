@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card__header">
+    <h1 class="card__header--text">sehr-viel-sehr.ch</h1>
+  </div>
+  <div class="card__description">
+    sehr + {{ adjective === "" ? "..." : adjective }}
+  </div>
+  <div class="card__search">
+    <input
+      class="card__input mr-4 focus:shadow focus:outline-none focus:border-slate-400 hover:border-slate-300 placeholder:text-slate-400"
+      placeholder="Suche nach Adjektiv..."
+      [(ngModel)]="adjective"
+      (keyup.enter)="onSearchPress()"
+    />
+    <button class="card__button--primary min-w-32" (click)="onSearchPress()">
+      Suchen
+    </button>
+  </div>
+  <span class="card__result">Besser formuliert: </span> <br />
+  <span class="card__prompt"
+    >{{ replacement === "" ? "Geben Sie oben ein Adjektiv ein" : replacement }}
+  </span>
+  <div class="card__actions">
+    <button class="card__button--primary" (click)="onResetPress()">
+      Zurücksetzen
+    </button>
+    <button class="card__button--primary" (click)="onRandomPress()">
+      Zufällig
+    </button>
+    <button class="card__button--secondary" (click)="onSuggestionPress()">
+      Alternative vorschlagen
+    </button>
+  </div>
+</div>

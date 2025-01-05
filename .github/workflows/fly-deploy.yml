@@ -10,6 +10,8 @@ jobs:
     concurrency: deploy-group
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensures the full repository is cloned
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy -c svs-db/fly.toml --remote-only
         env:

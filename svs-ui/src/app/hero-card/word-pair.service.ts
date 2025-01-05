@@ -8,7 +8,7 @@ import { environment } from "../../environments/environment";
   providedIn: "root",
 })
 export class WordPairService {
-  private apiUrl = `${environment.apiUrl}/api/collections/wordpairs/records}`;
+  private apiUrl = `${environment.apiUrl}/api/collections/wordpairs/records`;
 
   private readonly http = inject(HttpClient);
   /**

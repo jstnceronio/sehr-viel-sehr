@@ -13,6 +13,9 @@ jobs:
         with:
           fetch-depth: 0 # Ensures the full repository is cloned
       - uses: superfly/flyctl-actions/setup-flyctl@master
+      # Debug: Check for build context files
+      - name: Debug build context
+        run: ls -R svs-db
       - run: flyctl deploy -c svs-db/fly.toml --remote-only
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

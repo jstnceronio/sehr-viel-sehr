@@ -2,12 +2,14 @@ import { HttpClient, HttpParams } from "@angular/common/http";
 import { inject, Injectable } from "@angular/core";
 import { GetWordPairsResponse } from "./hero-card.component";
 import { Observable } from "rxjs";
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: "root",
 })
 export class WordPairService {
-  private apiUrl = "http://localhost:8090/api/collections/wordpairs/records";
+  private apiUrl = `${environment.apiUrl}/api/collections/wordpairs/records}`;
+
   private readonly http = inject(HttpClient);
   /**
    * Fetches word pairs with a custom filter.
